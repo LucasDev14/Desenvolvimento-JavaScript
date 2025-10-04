@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>O essencial de HTML e CSS</title>
+</head>
+
+<body>
+
+    <!--criando uma tag para representar o cabeçalho-->
+    <header class="cabecalho-blog">
+        <div class="container">
+            <!--a tag <nav> serve para indicar quando temos
+            um bloco de links-->
+            <nav>
+                <a href="#">
+                    <h1>Blog Do JavaScript</h1>
+                </a>
+                <ul>
+                    <li><a href="#"> Home </a></li>
+                    <li><a href="#"> Sobre </a></li>
+                    <li><a href="#"> Contato </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Agora vamos construir o corpo do blog, com o conteúdo principal-->
+    <main class="conteudo-principal-blog">
+        <div class="container">
+            <div class="layout-blog">
+
+                <!-- article -> define um conteúdo (post de blog,
+        noticia, um comentário) -->
+                <article class="post">
+                    <h2>Entendendo a base da web: HTML e CSS</h2>
+                    <p><em>Publicado em 20 de Setembro de 2025</em></p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium dolore doloribus ipsum
+                        ducimus tenetur minus magnam iure nisi quod assumenda doloremque praesentium pariatur totam
+                        libero beatae aliquid laborum facere culpa excepturi fugit aperiam, aliquam delectus. Eaque
+                        culpa unde impedit perferendis dolores dolorem odit laudantium rerum corporis dolore! Provident
+                        deleniti officia eum.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor porro quia tempora harum sequi
+                        quibusdam accusantium beatae sed fugiat illum eius, voluptatum consequatur libero. Quis facere
+                        explicabo ea itaque deleniti laboriosam, veniam, sunt doloribus illum dolor, asperiores autem
+                        voluptatum architecto fugit quae quas reprehenderit fuga qui corporis sapiente nihil quibusdam.
+                    </p>
+                </article>
+
+                <aside class="barra-lateral">
+                    <h3>Posts Populares</h3>
+                    <ul>
+                        <li><a href="#">Guia Completo De Flexbox</a></li>
+                        <li><a href="#">Formulários com HTML5</a></li>
+                        <li><a href="#">Criando Animações Com CSS</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape-blog">
+        <div class = "container">
+            <p>&copy; 2025 Blog JavaScript. Todos o direitos reservados</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

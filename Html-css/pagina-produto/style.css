@@ -1,0 +1,127 @@
+body{
+    background-color:antiquewhite;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 100px;
+}
+
+.cabecalho{
+    color:rgb(74, 75, 75);
+    font-size: 30px;
+    background-color:hsl(75, 75, 75);
+    padding: 20px;
+    display: flex; /*permite que os elementos dentro de um container sejam organizados de forma flexivél, permite ajustar o alinhamento e a distribuição*/
+    justify-content: space-between; /*ajustar os itens nas extremidades*/
+    align-items: center; /*alinha os itens no centro vertical*/
+}
+
+.cabecalho h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.cabecalho nav a{
+    text-decoration: none; /*formatação pro texto*/
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    flex-wrap: wrap;
+}
+
+.cabecalho a{
+    text-decoration: none;/*tira a formatação de link do html*/
+    color: inherit; /*tira a cor vermelha de quando clicamos no link*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho ul{
+    list-style: none;/*tira a "bolinha" de tópico*/
+    display: flex;/*transforma a lista num container flexivel*/
+    gap: 20px;/*adiciona um espaço entre cada item da lista*/
+    font-size: 20px;
+}
+
+.conteudo {
+    padding: 20px;/*ajusta o espaçamento entre o cabeçalho
+    e conteúdo*/
+    display: flex;
+    flex-wrap: wrap; /*permite que as seções quebrem linha*/
+    justify-content: center;
+    gap: 20px; /*espaço externos entre as seções*/
+}
+
+.caixa{
+    
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1 1 300px;
+    /*Primeiro 1 -> seção cresce até ocupar todo espaço disponível;
+    Segundo 1 -> seção diminui para ocupar o espaço disponível;
+    300px -> determina o valor inicial, tamanho base da largura*/
+    text-align:justify;
+}
+
+.conteudo h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.conteudo p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 3, 3);
+    background-color:darkgray;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.conteudo tbody{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(3, 3, 3);
+}
+
+.conteudo h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: x-large;
+    color: rgb(3, 3, 3);
+    padding: 2px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.conteudo p{
+    font-size:larger;
+    color: rgb(75, 75, 75);
+    background-color:antiquewhite;
+    padding: 2px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgb(3, 3, 3);
+}
+
+img {
+    max-width: 100%; /* A imagem nunca passa do tamanho do contêiner */
+    height: auto;    /* Mantém a proporção correta */
+    display: block;  /* Remove o espaço extra abaixo (boa prática) */
+    box-shadow: 0 2px 10px rgb(3, 3, 3);
+}
+
+.rodape{
+    box-shadow: 0 2px 10px rgb(8, 7, 14);
+    color: darkslategrey;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 580px) {
+    .cabecalho{
+        flex-direction: column;/*em telas menores, o cabeçalho se empilhar*/
+        text-align: center;
+    }
+
+    .cabecalho nav a{
+        margin-top: 10px;
+    }
+}

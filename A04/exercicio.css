@@ -1,0 +1,87 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:antiquewhite;
+    margin: 0;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    border-bottom: 1px solid #333;
+    color: #333;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.cabecalho nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.botao{
+    background-color:#1a73e8;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #333;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: rgb(67, 67, 143);
+    box-shadow: 0 4px 8px #fff;
+}
+
+.conteudo{
+    padding: 20px 0;
+}
+
+.texto{
+    flex: 3;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #333;
+    text-decoration: underline;
+}
+
+.layout {
+    display: flex;
+    gap: 50px;
+}
+
+.barra-lateral{
+    flex:1;
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px #333;
+    text-decoration: underline;
+}
+
+.barra-lateral a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+}
+.barra-lateral ul{
+    list-style: none;
+}
+
+.barra-lateral h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.rodape{
+    background-color:beige;
+    padding: 10px;
+    color: #333;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #333;
+}
